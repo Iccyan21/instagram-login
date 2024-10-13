@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
 @main
-struct instagram_loginApp: App {
+struct YourApp: App {
+
+    @Environment(\.openURL) var openURL
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                //ContentView()
+                InstagramLoginView()
+            }
         }
     }
 }
